@@ -115,6 +115,7 @@ namespace VoidRewardParser.Logic
                     {
                         p.Visible = true;
                         fetchPlatpriceTasks.Add(FetchPlatPriceTask(p));
+                        fetchPlatpriceTasks.Add(FetchDucatValueTask(p));
                     }
                     else
                     {
@@ -164,6 +165,16 @@ namespace VoidRewardParser.Logic
             else
             {
                 displayPrime.PlatinumPrice = "?";
+            }
+        }
+
+        private async Task FetchDucatValueTask(DisplayPrime displayPrime)
+        {
+            var ducats = await DucatValues.GetDucatPriceValue(displayPrime);
+            if(ducats != 0)
+            {
+                displayPrime.Prime.Ducats = ducats;
+                displayPrime.Ducats = ducats.ToString();
             }
         }
         

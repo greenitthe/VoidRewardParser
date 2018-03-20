@@ -17,7 +17,7 @@
             </Grid.ColumnDefinitions>
             <WrapPanel Grid.Column="0" Margin="5">
                 <TextBlock Text="Ducats: " FontSize="12"/>
-                <TextBlock Text="{Binding Path=Prime.Ducats}" FontSize="12" FontWeight="Bold"/>
+                <TextBlock Text="{Binding Path=Ducats}" FontSize="12" FontWeight="Bold"/>
             </WrapPanel>
             <WrapPanel Grid.Column="1" Margin="5">
                 <TextBlock FontSize="12">

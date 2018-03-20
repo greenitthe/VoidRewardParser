@@ -11,6 +11,7 @@ namespace VoidRewardParser.Entities
         private ItemSaveData _data;
         private bool _visible;
         private string _platinumPrice;
+        private string _ducats;
 
         public PrimeItem Prime
         {
@@ -69,6 +70,25 @@ namespace VoidRewardParser.Entities
             {
                 if (_platinumPrice == value) return;
                 _platinumPrice = value;
+                OnNotifyPropertyChanged();
+            }
+        }
+
+        public string Ducats
+        {
+            get
+            {
+                if (_ducats == null)
+                {
+                    return "...";
+                }
+
+                return _ducats;
+            }
+            set
+            {
+                if (_ducats == value) return;
+                _ducats = value;
                 OnNotifyPropertyChanged();
             }
         }
