@@ -1,14 +1,14 @@
 # Void Reward Parser
 Parses the Void rewards screen for Warframe and displays ducat Values
 
-##To use:
+## To use:
 
 Open in background with Warframe open. As long as Warframe is open it will scan the primary monitor for a void rewards screen.
 If detected it will parse out any prime parts and display the rarity and Ducat value in a list.
 
 Requires Warframe to run in *Borderless Windowed* or *Windowed* mode, does not work fullscreen.
 
-##Supported Languages:
+## Supported Languages:
 
 English, Russian, Portuguese, German
 
@@ -22,7 +22,7 @@ If your Windows default language does not match the language you use in the game
 
 If your language isn't currently supported, check out the [new localization readme](https://github.com/Xeio/VoidRewardParser/tree/master/VoidRewardParser/Localization), and send me the file so I can include it.
 
-##Requirements:
+## Requirements:
 
 * **Windows 10**
 
