@@ -14,6 +14,11 @@ namespace VoidRewardParser.Logic
         private const String _baseUrl = "https://api.warframe.market/v1/items/{0}";
         public static async Task<int> GetDucatPriceValue(DisplayPrime displayPrime)
         {
+            if(displayPrime.Ducats == "?")
+            {
+                return 0;
+            }
+
             if(displayPrime.Prime.Ducats != 0)
             {
                 return displayPrime.Prime.Ducats;

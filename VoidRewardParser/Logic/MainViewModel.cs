@@ -176,6 +176,10 @@ namespace VoidRewardParser.Logic
                 displayPrime.Prime.Ducats = ducats;
                 displayPrime.Ducats = ducats.ToString();
             }
+            else
+            {
+                displayPrime.Ducats = "?";
+            }
         }
         
         private void OnMissionComplete()
