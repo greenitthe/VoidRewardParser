@@ -201,6 +201,11 @@ namespace VoidRewardParser.Logic
             }
         }
 
+        public void ClearPrimes()
+        {
+            foreach (var p in PrimeItems) { p.Visible = false; }
+        }
+
         public async void Close()
         {
             (await PrimeData.GetInstance()).SaveToFile();

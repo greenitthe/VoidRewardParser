@@ -35,5 +35,10 @@ namespace VoidRewardParser
         {
             ViewModel.LoadCommand.Execute();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.ClearPrimes();
+        }
     }
 }
