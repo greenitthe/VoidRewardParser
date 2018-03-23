@@ -147,6 +147,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\DucatRatioColorConverter.cs" />
     <Compile Include="Converters\LocalizedStringConverter.cs" />
     <Compile Include="Converters\RarityToColorConverter.cs" />
     <Compile Include="Entities\CacheEntry.cs" />

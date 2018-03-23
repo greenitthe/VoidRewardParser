@@ -12,6 +12,7 @@ namespace VoidRewardParser.Entities
         private bool _visible;
         private string _platinumPrice;
         private string _ducats;
+        private string _ducatRatio;
 
         public PrimeItem Prime
         {
@@ -89,6 +90,26 @@ namespace VoidRewardParser.Entities
             {
                 if (_ducats == value) return;
                 _ducats = value;
+                OnNotifyPropertyChanged();
+            }
+        }
+
+        public string DucatRatio
+        {
+            get
+            {
+                if (_ducatRatio == null)
+                {
+                    return "...";
+                }
+
+               return _ducatRatio;
+            }
+
+            set
+            {
+                if (_ducatRatio == value) return;
+                _ducatRatio = value;
                 OnNotifyPropertyChanged();
             }
         }

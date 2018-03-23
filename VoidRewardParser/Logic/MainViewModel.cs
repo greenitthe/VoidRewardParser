@@ -175,6 +175,15 @@ namespace VoidRewardParser.Logic
             {
                 displayPrime.Prime.Ducats = ducats;
                 displayPrime.Ducats = ducats.ToString();
+                if(displayPrime.PlatinumPrice != "?")
+                {
+                    int plat = 0;
+                    if (int.TryParse(displayPrime.PlatinumPrice, out plat))
+                    {
+                        float ratio = (float)ducats / (float) plat;
+                        displayPrime.DucatRatio = ratio.ToString("n2");
+                    }
+                }
             }
             else
             {
