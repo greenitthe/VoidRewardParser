@@ -26,7 +26,7 @@ namespace VoidRewardParser.Converters
             }
             if(ducatRatio > 1.50f)
             {
-                ratioBrush.Color = Colors.Orange;
+                ratioBrush.Color = Colors.DarkOrange;
             }
             if(ducatRatio > 2.50f)
             {
